@@ -1,0 +1,5 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BZ1,Buzzer_12x9.5RM7.6,1,Buzzer,
+J1,PinSocket_1x08_P2.54mm_Vertical,1,Conn_01x08,
+"SW1, SW2, SW3, SW4",SW_Cherry_MX_1.00u_PCB,4,SW_Push,
+U1,XIAO-ESP32-C3-DIP,1,XIAO-ESP32-C3-SMD,
