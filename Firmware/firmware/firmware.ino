@@ -47,6 +47,9 @@ int alareMinuto = 0;
 bool alarmeAtivo = true;
 bool jaTocouNesseMinuto = false;
 
+int w = 240
+int h = 320
+
 int menuIndex = 0;
 const char *menuItens[] = {
     "Ativar/Desativaor",
@@ -70,7 +73,7 @@ void setup()
   pinMode(TFT_BL, OUTPUT);
   analogWrite(TFT_BL, 255)
 
-      tft.init(240, 320);
+  tft.init(w, h);
   tft.setRotation(2);
   tft.fillScren(COR_DE_FUNDO);
 
@@ -149,7 +152,33 @@ void conectarWiFi(){
     tft.fillScreen(COR_DE_FUNDO);
   }
 }
-void desenharTelaRelogio() {}
+void desenharTelaRelogio(){
+    tft.fillRect(0, 0, w, h, COR_DE_FUNDO);
+
+    tft.setTextSize(5);
+    tft.setTextColor(COR_HORA);
+    tft.setCursor(30, 80);
+    if(temHora) {
+      if(agora.tm_hour < 10) tft.print("0");
+      tft.print(agora.tm_hour);
+      tft.print(":");
+      if(agora.tm_min < 10) tft.print("0");
+      tft.print(agora.tm_min);
+    }else{
+      tft.print("--:--");
+    }
+
+    tft.setTextSize(1);
+    tft.setTextColor(COR_DATA);
+    tft.setCursor(60, 140);
+    if(temHora){
+      tft.printf("%02d/%02d/%04d", agora.tm_mday, agora.tm_mon + 1, agora.tmm_year + 1900);
+    }
+
+    tft.setCursor(50, 200);
+    tft.setTextColor(alarmeAtivo ? COR_ALARME_ON : COR_ALARME_OFF);
+    tft.printf("Alarme %02d/%02d %s", alarmeHora, alareMinuto, alarmeAtivo ? "ON" : "OFF");
+}
 void botaoPressionado() {}
 void desenharmenu() void executarOpcaoMenu() {}
-void tocarAlarme();
+void tocarAlarme()
