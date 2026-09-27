@@ -1,3 +1,5 @@
+//I didn't write the code in English because I was focused on the code itself; translating everything would have taken too long.'
+
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
 #include <SPI.h>
@@ -179,6 +181,20 @@ void desenharTelaRelogio(){
     tft.setTextColor(alarmeAtivo ? COR_ALARME_ON : COR_ALARME_OFF);
     tft.printf("Alarme %02d/%02d %s", alarmeHora, alareMinuto, alarmeAtivo ? "ON" : "OFF");
 }
+void desenharmenu(){
+  tft.fillRect(0,0, w,h, COR_DE_FUNDO);
+  tft.setTextSize(2);
+  tft.setCursor(50, 10);
+  tft.setTextColor(COR_DESTAQUE);
+  tft.print("MENU");
+
+  for(int i=0;i<totalMenuItens;i++){
+    tft.setCursor(20, 50 + i * 30);
+    tft.setTextColor(i == menuIndex ?COR_DESTAQUE : COR_DATA);
+    tft.print(i == menuIndex ? ">":"");
+    tft.print(menuItens[i]);
+  }
+} 
+void executarOpcaoMenu() {}
 void botaoPressionado() {}
-void desenharmenu() void executarOpcaoMenu() {}
 void tocarAlarme()
