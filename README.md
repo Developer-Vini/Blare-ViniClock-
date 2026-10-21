@@ -10,6 +10,8 @@ ViniClock is an alarm clock to wake me up whenever I have to go to school; I don
 ### CASE 3D
 ![top](docs/images/case_TOP.png)
 ![finished_img](docs/images/finished_img.png)
+![finished_img](docs/images/Screenshot_3.png)
+![finished_img](docs/images/Screenshot_4.png)
 
 ## Assembly CASE 3D:
 ![BOTTOM](docs/images/assembly_case_bottom.png)
