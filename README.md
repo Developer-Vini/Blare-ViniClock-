@@ -36,13 +36,13 @@ While developing the project, I learned various concepts and 3D modeling techniq
 
 # BOM
 
-| Designator | Footprint | Quantity | Value | |
-| :--- | :--- | :---: | :--- | :--- |
-| BZ1 | Buzzer_12x9.5RM7.6 | 1 | Buzzer | |
-| J1 | PinSocket_1x08_P2.54mm_Vertical | 1 | Conn_01x08 | |
-| SW1, SW2, SW3, SW4 | SW_Cherry_MX_1.00u_PCB | 4 | SW_Push | |
-| U1 | XIAO-ESP32-C3-DIP | 1 | XIAO-ESP32-C3-SMD | |
-| TFT | 2.25in TFT Screen | 1 | | |
+| Designator | Footprint                          | Quantity |
+|:-----------|:-----------------------------------|:--------:|
+| BZ1        | Buzzer_12x9.5RM7.6                 | 1        |
+| J1         | PinSocket_1x08_P2.54mm_Vertical    | 1        |
+| SW1–SW4    | SW_Cherry_MX_1.00u_PCB             | 4        |
+| U1         | XIAO-ESP32-C3-DIP                  | 1        |
+| TFT        | 2.25in TFT Screen                  | 1        |
 
 # Firmware
 The code was written entirely in C++—I personally prefer programming in C. It wasn't too hard to write, though I'm not sure if everything is 100% correct; I'll only know for sure once I get the kit and can test it, but my ego tells me it's spot on, haha. I could have tested it on Tinkercad, but it doesn't have the specific components I need.
