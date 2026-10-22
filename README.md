@@ -53,6 +53,7 @@ While developing the project, I learned various concepts and 3D modeling techniq
 | M3x8mm Screws| 4 |
 
 I’m going to glue the top on; it’s better than using screws.
+I’ll update the images later—I don’t have time right now—but I have updated the .step files; feel free to take a look.
 
 
 # Firmware
