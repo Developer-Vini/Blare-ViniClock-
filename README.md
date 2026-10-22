@@ -18,6 +18,8 @@ ViniClock is an alarm clock to wake me up whenever I have to go to school; I don
 ![MIDDLE](docs/images/assembly_case_middle.png)
 ![TOP](docs/images/assembly_case_top.png)
 
+
+
 ### PCB 3d
 ![pcb_3d_view](docs/images/pcb_3d.png)
 ![1pcb_3d_view](docs/images/1pcb_3d.png)
