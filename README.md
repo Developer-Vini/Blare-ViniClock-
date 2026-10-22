@@ -52,6 +52,7 @@ While developing the project, I learned various concepts and 3D modeling techniq
 | Female Jumper| 7 |
 | M3x8mm Screws| 4 |
 
+I’m going to glue the top on; it’s better than using screws.
 
 
 # Firmware
