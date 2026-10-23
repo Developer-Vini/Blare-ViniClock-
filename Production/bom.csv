@@ -4,7 +4,6 @@ J1,PinSocket_1x08_P2.54mm_Vertical,1,Conn_01x08,—
 "SW1, SW2, SW3, SW4",SW_Cherry_MX_1.00u_PCB,4,SW_Push,—
 U1,XIAO-ESP32-C3-DIP,1,XIAO-ESP32-C3-SMD,—
 TFT1,Display connector,1,"ST7789 TFT Display, 2.25 in",—
-J2,USB-C connector,1,USB Power Input,—
 CASE1,3D-printed enclosure,1,Custom 3D Case,N/A
 KEY1–KEY4,DSA 1u keycaps,4,White Blank Keycaps,N/A
 SC1–SC4,M3 × 8 mm,4,PCB Mounting Screws,N/A
