@@ -40,21 +40,20 @@ While developing the project, I learned various concepts and 3D modeling techniq
 
 # BOM
 
+| Part                          | Description                                           | Qty |
+| ----------------------------- | ----------------------------------------------------- | --- |
+| BZ1 – Piezo Buzzer            | Sound effects and audio feedback                      | 1   |
+| J1 – Pin Header               | 1×8 male header, 2.54 mm pitch                        | 1   |
+| SW1–SW4 – Keyboard Switches   | MX-style mechanical switches for user input           | 4   |
+| U1 – Seeed XIAO ESP32-C3      | Main microcontroller for device control               | 1   |
+| TFT Display                   | 2.25-inch display, 76 × 284 resolution                | 1   |
+| Keycaps                       | Blank white DSA keycaps, 1u size                      | 4   |
+| Female-to-Female Jumper Wires | Wires for connecting the display to the PCB           | 7   |
+| M3 × 8 mm Screws              | Screws for mounting the PCB                           | 4   |
+| USB Charger                   | USB power adapter for powering the device             | 1   |
+| 3D-Printed Case               | Custom enclosure to house and protect the electronics | 1   |
 
-| Designator | Quantity |
-| :--- | :---: |
-| BZ1 | 1 |
-| J1 | 1 |
-| SW1–SW4 | 4 |
-| U1 | 1 |
-| TFT | 1 |
-| Keycaps | 1 |
-| Female Jumper| 7 |
-| M3x8mm Screws| 4 |
-
-I’m going to glue the top on; it’s better than using screws.
 I’ll update the images later—I don’t have time right now—but I have updated the .step files; feel free to take a look.
-
 
 # Firmware
 The code was written entirely in C++—I personally prefer programming in C. It wasn't too hard to write, though I'm not sure if everything is 100% correct; I'll only know for sure once I get the kit and can test it, but my ego tells me it's spot on, haha. I could have tested it on Tinkercad, but it doesn't have the specific components I need.
